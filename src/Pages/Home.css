@@ -1,0 +1,87 @@
+*{
+    cursor: none;
+}
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+.hover:animate-gradient-hover:hover {
+    animation: gradient 2s ease infinite;
+}
+
+.cursurLine {
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5 )
+}
+
+
+.cursur, .cursurLine{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.cursurLine {
+    transition: left 0.2s ease, top 0.2s ease;
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
